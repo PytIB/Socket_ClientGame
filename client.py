@@ -4,6 +4,7 @@ import socket
 class Client:
     def __init__(self):
         self.client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+        #please enter host IP address 
         self.host = socket.gethostname()
         self.port = 27015
         self.addr = (self.host,self.port)
